@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Forge_15_LuzNegra
+  m_Shader: {fileID: 4800000, guid: dc8bb8fa9937bf242b7a5f153a0bbfc3, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: da0545c7713e82e49a9b36339ac15761, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: 671e5dedbe7a97d418393d4ddb01b313, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Gloss: 0.5
+    - _MaxTolerance: 0.22
+    - _MinTolerance: 0.09
+    m_Colors:
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _ColorA: {r: 0.8774065, g: 0.2666667, b: 0.99607843, a: 1}
+    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _TexColor: {r: 0.6784314, g: 0.8117648, b: 0.7450981, a: 1}

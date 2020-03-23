@@ -2647,7 +2647,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -3481,7 +3491,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -3560,7 +3580,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -3802,7 +3832,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -4310,7 +4350,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -5144,7 +5194,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -6141,7 +6201,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -6649,7 +6719,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -7157,7 +7237,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -9063,7 +9153,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -9142,7 +9242,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -9221,7 +9331,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -9626,7 +9746,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -10297,7 +10427,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -11560,7 +11700,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -12557,7 +12707,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -13065,7 +13225,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -13144,7 +13314,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -13815,7 +13995,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
@@ -13894,7 +14084,17 @@ PrefabInstance:
     - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
         type: 3}
       propertyPath: maxAirAcceleration
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521037898912100533, guid: bb59cef3543495246a8e7f3d73e78a06,
+        type: 3}
+      propertyPath: maxGroundAngle
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb59cef3543495246a8e7f3d73e78a06, type: 3}
