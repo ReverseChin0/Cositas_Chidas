@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Forge_11_ViewBasedLighting
-  m_Shader: {fileID: 4800000, guid: cdca7e1d2e429124198e9282a00d9a4e, type: 3}
+  m_Name: Shader Forge_27_VertexDisplacement
+  m_Shader: {fileID: 4800000, guid: 5f6407d9912ad58488869d5094ce3dba, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,10 +19,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
-    m_Floats: []
+    m_Floats:
+    - _max: 1
+    - _min: 0.26
     m_Colors:
-    - _HighLightDirection: {r: 0, g: 0, b: 0, a: 0}
-    - _LightColor: {r: 0.29166353, g: 1, b: 0, a: 1}
-    - _LightDirection: {r: 0.5, g: 1, b: 1, a: 0}
-    - _MainColor: {r: 0.9607843, g: 0.4039216, b: 0.5660602, a: 1}
-    - _ShadowColor: {r: 0.015686274, g: 0.6393726, b: 1, a: 1}
+    - _Color: {r: 0.078431346, g: 0.39215687, b: 0.7843137, a: 1}
