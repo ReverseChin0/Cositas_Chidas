@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -228,8 +229,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784610409}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -325,7 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointPrefab: {fileID: 7816492929509393833, guid: d1a0400517eb16a48b96c85907bd581b,
     type: 3}
-  resolution: 100
+  resolution: 10
 --- !u!4 &1711847406
 Transform:
   m_ObjectHideFlags: 0
