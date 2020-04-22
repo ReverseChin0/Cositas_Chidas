@@ -2452,6 +2452,31 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &814585879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4c780e6e910d20a49861cff50446c65e,
+    type: 3}
+  m_PrefabInstance: {fileID: 567050178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &814585880
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814585879}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &840024545
 GameObject:
   m_ObjectHideFlags: 0
@@ -6717,7 +6742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592878596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.42, y: 11.317224, z: 19.16}
+  m_LocalPosition: {x: 5.17, y: 11.317224, z: 19.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6752,6 +6777,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelo: {fileID: 567050179}
   camaraSpace: {fileID: 29607302}
+  myanim: {fileID: 814585880}
+  aniCont: {fileID: 9100000, guid: 0066d1ffa07d5514f80801f48e5fa685, type: 2}
   anguloPiso: 10
   velocidadMax: 25
 --- !u!54 &1592878600

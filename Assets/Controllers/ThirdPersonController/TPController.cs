@@ -65,7 +65,7 @@ public class TPController : MonoBehaviour
         playeranim.SetBool("isGrounded", stepsSinceLastGrounded < 2? true:false);
         if(lastvelocity.sqrMagnitude>0.01f)
         targetRotation =  Quaternion.LookRotation(lastvelocity, Vector3.up);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, velocidadAjusteRot * Time.deltaTime); ;
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, velocidadAjusteRot * Time.deltaTime); 
 
         desiredJump |= Input.GetButtonDown("Jump"); //OR operation, or the OR assignment. used to prevent desired jump being forgotten before next physics update
     }

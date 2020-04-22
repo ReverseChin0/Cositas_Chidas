@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System;
+using UnityEditor.Animations;
 
 public class KartController : MonoBehaviour
 {
     [SerializeField]
     Transform modelo = null, camaraSpace = null;
     Vector3 contactNormal, AccelerationDir, desiredInput, inputspeed;
+
+    [SerializeField]
+    Animator myanim = default;
+
+    [SerializeField]
+    AnimatorController aniCont = default;
 
     [SerializeField]
     float anguloPiso = 5.0f;
@@ -20,18 +27,24 @@ public class KartController : MonoBehaviour
 
     float minGroundDotProduct = 0;
     private bool enSuelo, enContacto;
+    private bool desiredJump;
+    private Quaternion desiredrotation;
 
     private void Start() {
         OnValidate();
         rb = GetComponent<Rigidbody>();
+        myanim.runtimeAnimatorController = aniCont;
     }
 
     private void Update() {
 
         GetInputs();
+        Vector3 gndPos = transform.position;
         if (!enSuelo && enContacto) {
             AccelerationDir = getSpeedDirection();
             inputspeed = GetApplyInputSpeed();
+            if(Physics.Raycast(transform.position, -contactNormal,out RaycastHit hit, 1.0f))
+                gndPos = hit.point;
         }else if (enSuelo) {
             //onlyturn;
             if (desiredInput.sqrMagnitude > 0.04f) {
@@ -39,12 +52,15 @@ public class KartController : MonoBehaviour
                 Vector3 desiredNormalized = desiredInput.normalized;
                 inputspeed = desiredNormalized * rb.velocity.magnitude;
             }
+            if (Physics.Raycast(transform.position, -contactNormal, out RaycastHit hit, 1.0f))
+                gndPos = hit.point;
         }
-
+        desiredrotation = transform.rotation;
         if (contactNormal != null) {
-            modelo.rotation = Quaternion.LookRotation(rb.velocity, contactNormal);
+            desiredrotation = Quaternion.LookRotation(rb.velocity, contactNormal);
         }
-        modelo.position = transform.position;
+        modelo.rotation = Quaternion.Slerp(transform.rotation, desiredrotation, Time.time);
+        modelo.position = Vector3.Lerp(modelo.position,gndPos,Time.time);
     }
 
     
@@ -56,7 +72,19 @@ public class KartController : MonoBehaviour
             //rb.velocity = Vector3.Lerp(rb.velocity,inputspeed,Time.deltaTime);
             rb.velocity = rb.velocity + (inputspeed * 0.5f * Time.deltaTime);
         }
+
+        if (desiredJump) {
+            desiredJump = false;
+            Jump();
+        }
         enContacto = enSuelo = false;
+    }
+
+    private void Jump() {
+        if (enContacto) {
+            float alignedSpeed = Vector3.Dot(rb.velocity, contactNormal);
+            rb.velocity += contactNormal * 5.5f;
+        }
     }
 
     Vector3 getSpeedDirection() {
@@ -97,7 +125,8 @@ public class KartController : MonoBehaviour
         } else {
             desiredInput = new Vector3(inputs.x, 0f, inputs.y);
         }
-       
+
+        desiredJump |= Input.GetButtonDown("Jump");
     }
 
     Vector3 ProyectarSobrePlano(Vector3 vector) {
