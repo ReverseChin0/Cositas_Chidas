@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [RequireComponent(typeof(Camera))]
 public class OrbitCamera : MonoBehaviour{
     [SerializeField]
@@ -26,15 +27,26 @@ public class OrbitCamera : MonoBehaviour{
     [SerializeField, Range(0f, 90f)]
     float alignSmoothRange = 45f;
 
+    [SerializeField]
+    bool invertY = false;
+
+    [SerializeField]
+    LayerMask obstructionMask = -1;
+
+    Camera regularCamera;
+
+
     float lastManualRotationTime;
-    Vector3 focusPoint, previousFocusPoint;
+    Vector3 focusPoint, previousFocusPoint = default , camExtends;
 
     Vector2 orbitAngles = new Vector2(45f, 0f);
 
     void Awake()
     {
+        regularCamera = GetComponent<Camera>();
         focusPoint = focus.position;
         transform.localRotation = Quaternion.Euler(orbitAngles);
+        camExtends = CameraHalfExtends;
     }
 
     void LateUpdate()
@@ -49,6 +61,21 @@ public class OrbitCamera : MonoBehaviour{
         }
         Vector3 lookDirection = lookRotation * Vector3.forward;
         Vector3 lookPosition = focusPoint - lookDirection * distance;
+
+
+        //Raycasts para evitar overlap de camara
+        Vector3 rectOffset = lookDirection * regularCamera.nearClipPlane;
+        Vector3 rectPosition = lookPosition + rectOffset;
+        Vector3 castFrom = focus.position;
+        Vector3 castLine = rectPosition - castFrom;
+        float castDistance = castLine.magnitude;
+        Vector3 castDirection = castLine / castDistance;
+
+        if (Physics.BoxCast(castFrom, camExtends, castDirection, out RaycastHit hit, lookRotation, castDistance, obstructionMask)) {
+            rectPosition = castFrom + castDirection * hit.distance;
+            lookPosition = rectPosition - rectOffset;
+        }
+        //Listo el Raycast
         transform.SetPositionAndRotation(lookPosition, lookRotation);
     }
 
@@ -77,6 +104,9 @@ public class OrbitCamera : MonoBehaviour{
             Input.GetAxis("Mouse Y"),
             Input.GetAxis("Mouse X")
         );
+
+        if (invertY)
+            input.x = -input.x;
         const float e = 0.001f; //epsilon value
         if (input.x < -e || input.x > e || input.y < -e || input.y > e) {
             orbitAngles += rotationSpeed * Time.unscaledDeltaTime * input;
@@ -133,5 +163,18 @@ public class OrbitCamera : MonoBehaviour{
         float angle = Mathf.Acos(direction.y) * Mathf.Rad2Deg;
         return direction.x < 0f ? 360f - angle : angle;
     }
+
+    Vector3 CameraHalfExtends {
+        get {
+            Vector3 halfExtends;
+            halfExtends.y =
+                regularCamera.nearClipPlane *
+                Mathf.Tan(0.5f * Mathf.Deg2Rad * regularCamera.fieldOfView);
+            halfExtends.x = halfExtends.y * regularCamera.aspect;
+            halfExtends.z = 0f;
+            return halfExtends;
+        }
+    }
+
 }
   
