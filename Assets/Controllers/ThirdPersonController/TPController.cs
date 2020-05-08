@@ -31,7 +31,7 @@ public class TPController : MonoBehaviour
     [SerializeField, Min(0f)]
     float probeDistance = 1f;
 
-    public ShieldSurf shurf;
+    public ShieldSurf shurf=default;
 
     int jumpPhase;
     int stepsSinceLastGrounded, stepsSinceLastJump; //para snapear al suelo
@@ -46,7 +46,7 @@ public class TPController : MonoBehaviour
     Rigidbody body;
     Quaternion targetRotation;
     bool desiredJump;
-    bool onGround, onContact, beginboard = false , canbeginboard = false;
+    bool onGround, onContact, beginboard = false /*, canbeginboard = false*/;
     Collider micoli;
 
     void Awake()
@@ -176,7 +176,7 @@ public class TPController : MonoBehaviour
         if (onGround || SnapToGround()){//para snapear al piso
             stepsSinceLastGrounded = 0;
             jumpPhase = 0;
-            canbeginboard = true;
+            //canbeginboard = true;
         } else{
             contactNormal = Vector3.up;
         }
